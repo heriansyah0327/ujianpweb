@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-blue {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+  .btn-red {
+    @apply bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded;
+  }
+  .btn-yellow {
+    @apply bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded;
+  }
+  .btn-green {
+    @apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded;
+  }
+  .input-none {
+    @apply w-full py-3 px-5 mb-0 mx-0 mt-0 inline-block border border-solid border-cyan-300 rounded box-border;
+  }
+  .input-submit {
+    @apply w-full bg-green-500 text-white py-3 px-5 my-2 mx-0 inline-block border-0 rounded cursor-pointer;
+  }
+  .input-button {
+    @apply w-full bg-gray-800 text-white py-3 px-5 my-2 mx-0 inline-block border-0 rounded cursor-pointer;
+  }
+}
