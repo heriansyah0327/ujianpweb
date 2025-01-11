@@ -12,24 +12,14 @@ const AddEdit = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
     })
-      .then((response) => {
-        console.log("Response status:", response.status);
-        return response.json();
-      })
+      .then((response) => response.json())
       .then((data) => {
         console.log("Success:", data);
         navigate("/");
       })
       .catch((error) => {
         console.error("Error:", error);
-      })
-      
-      .then((data) => {
-        console.log("Success:", data);
-        alert("Data added successfully!");
-        navigate("/");
       });
-          
   };
 
   return (
@@ -60,15 +50,10 @@ const AddEdit = () => {
             type="text"
             className="border border-gray-300 p-2 w-full"
             value={formData.contact}
-            onChange={(e) =>
-              setFormData({ ...formData, contact: e.target.value })
-            }
+            onChange={(e) => setFormData({ ...formData, contact: e.target.value })}
           />
         </div>
-        <button
-          type="submit"
-          className="bg-blue-500 text-white px-4 py-2 rounded"
-        >
+        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
           Submit
         </button>
       </form>
