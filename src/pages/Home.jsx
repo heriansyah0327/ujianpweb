@@ -74,7 +74,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gray-400 p-4">
       <div className="text-center mb-4">
-        <h1 className="text-3xl font-bold">CRUD UJIAN PWEB</h1>
+        <h1 className="text-3xl font-bold">DATA ASISTEN LABTI INFORMATIKA</h1>
       </div>
 
       <button
