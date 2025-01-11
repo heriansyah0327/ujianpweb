@@ -27,7 +27,6 @@ const EditContact = () => {
       body: JSON.stringify(user),
     })
       .then(() => {
-        alert("User updated successfully!");
         navigate("/");
       })
       .catch((error) => {
@@ -66,10 +65,7 @@ const EditContact = () => {
             onChange={(e) => setUser({ ...user, contact: e.target.value })}
           />
         </div>
-        <button
-          type="submit"
-          className="bg-blue-500 text-white px-4 py-2 rounded"
-        >
+        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
           Update
         </button>
       </form>
